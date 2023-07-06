@@ -1,0 +1,83 @@
+<!-- https://www.youtube.com/watch?v=m31q1Aorkkc&ab_channel=AsmrProg -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day #37 - Box Shadow Generator | AsmrProg</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="result">
+        <div id="preview"></div>
+      </div>
+
+      <div class="settings">
+        <div class="range-wrapper">
+          <label for="x-shadow">Horizontal Shadow :</label>
+          <input id="x-shadow" type="range" min="-100" max="100" value="-6" />
+        </div>
+
+        <div class="range-wrapper">
+          <label for="y-shadow">Vertical Shadow :</label>
+          <input id="y-shadow" type="range" min="-100" max="100" value="15" />
+        </div>
+
+        <div class="range-wrapper">
+          <label for="blur-r">Blur Radius :</label>
+          <input id="blur-r" type="range" min="0" max="100" value="30" />
+        </div>
+
+        <div class="range-wrapper">
+          <label for="spread-r">Spread Radius :</label>
+          <input id="spread-r" type="range" min="-50" max="50" value="6" />
+        </div>
+
+        <div class="range-wrapper">
+          <label for="border-r">Border Radius :</label>
+          <input
+            id="border-r"
+            type="range"
+            min="0"
+            max="100"
+            step="1"
+            value="70"
+          />
+        </div>
+
+        <div class="range-wrapper">
+          <label for="shadow-opacity">Shadow Opacity :</label>
+          <input
+            id="shadow-opacity"
+            type="range"
+            min="0"
+            max="1"
+            step="0.1"
+            value="0.5"
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="inset-shadow">Inset Shadow :</label>
+          <input id="inset-shadow" type="checkbox" />
+        </div>
+
+        <div id="color-wrapper">
+          <label for="shadow-color">Shadow Color :</label>
+          <input id="shadow-color" type="color" />
+        </div>
+      </div>
+
+      <div class="code-container">
+        <textarea id="styles" rows="2"></textarea>
+        <button id="copy-styles" onclick="copyStyles()">Copy Styles</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

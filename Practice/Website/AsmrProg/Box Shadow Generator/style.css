@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #311b92;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vmin;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(2, 42, 83, 0.2);
+  border-radius: 25px;
+  transform: translate(-50%, -50%);
+}
+.container .result {
+  padding: 20px 0 120px;
+}
+.container .result #preview {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-color: #311b92;
+  box-shadow: -6px 15px 30px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 70px;
+}
+.container .settings {
+  grid-template-columns: 6fr 6fr;
+  gap: 15px 25px;
+  display: grid;
+}
+.container .settings label {
+  font-size: 14px;
+}
+.container .settings input[type=range] {
+  width: 100%;
+  cursor: pointer;
+}
+.container .settings input[type=checkbox] {
+  cursor: pointer;
+}
+.container .settings input[type=color] {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
+.container .settings .range-wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+.container .settings .input-wrapper {
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+.container .settings #color-wrapper {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+  display: flex;
+}
+.container .code-container {
+  grid-template-columns: 6fr 2fr;
+  gap: 10px;
+  display: grid;
+  margin-top: 20px;
+}
+.container .code-container textarea {
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  resize: none;
+}
+.container .code-container button {
+  color: #ffffff;
+  background-color: #311b92;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
