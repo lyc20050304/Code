@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(#1c1917 50%, #ffb92a 50%);
+}
+
+.container {
+  width: 460px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+}
+.container form {
+  display: flex;
+  margin-bottom: 8px;
+}
+.container form input {
+  flex: 1;
+  padding: 6px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+.container form button {
+  padding: 6px;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: #ffb92a;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.container form button:hover {
+  background-color: #ce8b00;
+}
+.container #stock-list {
+  list-style: none;
+}
+.container #stock-list li {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+.container #stock-list li:last-child {
+  border-bottom: none;
+}
+.container #stock-list li.error {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
