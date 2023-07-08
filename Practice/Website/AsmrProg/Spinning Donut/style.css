@@ -1,0 +1,17 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.donut-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+}
+.donut-container #donut {
+  font-family: monospace;
+  font-size: 10px;
+}/*# sourceMappingURL=style.css.map */
