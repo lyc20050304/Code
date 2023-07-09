@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 350px;
+  background-color: #ffffff;
+}
+.container .picker {
+  align-items: center;
+  display: flex;
+  border-radius: 0 0 35px 35px;
+  justify-content: center;
+  padding: 35px 0;
+  background-color: #c8e6c9;
+}
+.container .picker #picker-btn {
+  padding: 6px 12px;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: #43a047;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-right: 8px;
+}
+.container .picker #picker-btn:hover {
+  background-color: #2e7d32;
+}
+.container .picker #export-btn {
+  padding: 6px 12px;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: #43a047;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.container .picker #export-btn:hover {
+  background-color: #2e7d32;
+}
+.container .colors-list {
+  margin: 10px 15px;
+}
+.container .colors-list.hide {
+  display: none;
+}
+.container .colors-list header {
+  align-items: center;
+  display: flex;
+  border-radius: 0 0 35px 35px;
+  justify-content: space-between;
+}
+.container .colors-list header .title {
+  font-size: 1rem;
+}
+.container .colors-list header #clear-btn {
+  color: #43a047;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.container .colors-list header #clear-btn:hover {
+  color: #2e7d32;
+}
+.container .colors-list .all-colors {
+  align-items: center;
+  display: flex;
+  border-radius: 0 0 35px 35px;
+  flex-wrap: wrap;
+  margin: 10px 0 0;
+  list-style: none;
+}
+.container .colors-list .all-colors .color {
+  display: flex;
+  width: 33.3333333333%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.container .colors-list .all-colors .color span {
+  font-size: 0.86rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.container .colors-list .all-colors .color span.rect {
+  display: block;
+  width: 22px;
+  height: 22px;
+  margin-right: 3px;
+  border-radius: 3px;
+}
+
+.color-popup {
+  position: fixed;
+  top: 52px;
+  left: 50%;
+  z-index: 9999;
+  width: 300px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+}
+.color-popup .color-popup-content {
+  padding: 20px;
+}
+.color-popup .color-popup-content .close-popup {
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+.color-popup .color-popup-content .color-info {
+  align-items: center;
+  display: flex;
+}
+.color-popup .color-popup-content .color-info .color-preview {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.color-popup .color-popup-content .color-info .color-details {
+  flex-grow: 1;
+}
+.color-popup .color-popup-content .color-info .color-details .color-value {
+  align-items: center;
+  display: flex;
+  margin-bottom: 5px;
+}
+.color-popup .color-popup-content .color-info .color-details .color-value .label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+.color-popup .color-popup-content .color-info .color-details .color-value .value {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

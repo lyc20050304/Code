@@ -1,0 +1,63 @@
+<!-- https://www.youtube.com/watch?v=76fEOCaRLY0&ab_channel=AsmrProg -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day #34 - Chrome Color Picker Extension | AsmrProg</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="picker">
+        <button id="picker-btn">Pick Color</button>
+        <button id="export-btn">Export Colors</button>
+      </div>
+
+      <div class="colors-list hide">
+        <header>
+          <p class="title">Picked Colors</p>
+          <span id="clear-btn">Clear All</span>
+        </header>
+
+        <ul class="all-colors">
+          <!-- <li class="color">
+            <span
+              class="rect"
+              style="background: ${color}; border: 1px solid ${color === '#ffffff' ? '#cccccc' : color}"
+            </span>
+            <span class="value hex" data-color="${color}">${color}</span>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- <div class="color-popup">
+      <div class="color-popup-content">
+        <span class="close-popup">x</span>
+
+        <div class="color-info">
+          <div class="color-preview" style="background: ${color}"></div>
+          <div class="color-details">
+            <div class="color-value">
+              <span class="label">Hex:</span>
+              <span class="value hex" data-color="${color}">${color}</span>
+            </div>
+
+            <div class="color-value">
+              <span class="label">RGB:</span>
+              <span class="value rgb" data-color="${color}"
+                >${hexToRgb(color)}</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
