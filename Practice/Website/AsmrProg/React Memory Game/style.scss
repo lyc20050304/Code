@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  color: #ffffff;
+  font-family: "Fira Mono", monospace;
+  font-size: 18px;
+  line-height: 1;
+  background-color: #212e3b;
+}
+
+.content {
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+
+  pre {
+    color: #4a93aa;
+    text-align: center;
+  }
+
+  #app {
+    .main {
+      .number-box {
+        text-align: center;
+
+        .info-box {
+          justify-content: space-between;
+          display: flex;
+          padding-bottom: 10px;
+
+          .level {
+            color: #f4c025;
+          }
+
+          .mistakes {
+            color: #f45957;
+          }
+        }
+
+        .divider {
+          margin: 20px 0;
+          color: #5b727f;
+        }
+
+        .number {
+          color: #f45957;
+          font-size: 36px;
+        }
+      }
+
+      @mixin style {
+        text-align: center;
+
+        button {
+          padding: 8px 16px;
+          color: #ffffff;
+          font-size: 14px;
+          text-transform: uppercase;
+          background-color: transparent;
+          border: 1px dashed #ffffff;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+      .input-box {
+        @include style;
+
+        form {
+          input {
+            padding: 8px 5px 0 0;
+            margin: 0 0 20px 10px;
+            color: #ffffff;
+            font-size: 20px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px dashed #5b727f;
+            outline: none;
+          }
+        }
+      }
+      .notif-box {
+        @include style;
+      }
+    }
+  }
+}
